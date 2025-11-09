@@ -28,7 +28,7 @@ pipeline {
                 
                 echo 'Starting the new container!'
                 // Maps the container's port 80 to the host's port 8080 (which you opened in the Security Group)
-                sh 'docker run -d -p 8080:80 --name yoga-site yoga-website:latest'
+                sh 'docker run -d -p 8081:80 --name yoga-site yoga-website:latest'
             }
         }
     }
